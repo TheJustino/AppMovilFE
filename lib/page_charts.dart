@@ -24,6 +24,8 @@ class pageCharts extends StatelessWidget {
       body: SafeArea(
         child: Padding(padding: const EdgeInsets.all(25.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
             children: [
               const Text(
                 'Graficas',
@@ -36,6 +38,7 @@ class pageCharts extends StatelessWidget {
               ),
 
               Container(
+                alignment: Alignment.topCenter,
                 padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
@@ -89,6 +92,7 @@ class lineChart extends StatelessWidget {
     return Scaffold(
         body: SizedBox(
       child: Container(
+        alignment: Alignment.topCenter,
         padding: EdgeInsets.fromLTRB(15, 15, 15, 15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
